@@ -15,6 +15,9 @@ app.listen(5000, console.log("Server Listening"))
 
 app.use("/users", userRouter)
 app.use("/cities", cityRouter)
+app.get("/test",(req,res)=>{
+    res.send("Server is live");
+});
 
 async function connectDB (){
     try {
