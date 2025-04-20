@@ -21,7 +21,7 @@ app.get("/test",(req,res)=>{
 
 async function connectDB (){
     try {
-        await mongoose.connect("mongodb://localhost:27017/Histopedia");
+        await mongoose.connect("mongodb+srv://anu:r66n2ef0WerhGCwp@cluster0.p6yjrwk.mongodb.net/?retryWrites=true&w=majority&appName=Cluster0");
         console.log("mongo db connected")
 
         
