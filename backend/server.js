@@ -27,7 +27,7 @@ app.use("/cities", cityRouter)
 
 async function connectDB (){
     try {
-        const mongoURI = process.env.MONGODB_URI || "mongodb://localhost:27017/Histopedia";
+        const mongoURI = process.env.MONGODB_URI || "mongodb+srv://anu:r66n2ef0WerhGCwp@cluster0.p6yjrwk.mongodb.net/?retryWrites=true&w=majority&appName=Cluster0";
         await mongoose.connect(mongoURI);
         console.log("MongoDB connected successfully")
     } catch (error) {
