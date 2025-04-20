@@ -98,7 +98,7 @@ const SignUp = () => {
       
       try {
 
-        const user =  await fetch("http://localhost:5000/users", {
+        const user =  await fetch("https://histopedia.onrender.com/users", {
           method: "POST",  
           headers: {
             "Content-Type": "application/json",
