@@ -26,7 +26,7 @@ const UserLogin = () => {
 
   const fetchData = async (username, password) => {
     try {
-      const response = await axios.get("http://localhost:5000/users");
+      const response = await axios.get("https://histopedia.onrender.com/users");
       if (!response.ok) {
         console.log("Network response was not ok");
       }
